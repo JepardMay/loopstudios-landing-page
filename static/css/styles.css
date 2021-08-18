@@ -1,0 +1,32 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+/* Variables */
+
+:root {
+	/* size */
+	--mobile-width: 375px;
+	--desktop-width: 1440px;
+
+	/* colors */
+	--color-white: hsl(0, 0%, 100%);
+	--color-black: hsl(0, 0%, 0%);
+	--color-dark-gray: hsl(0, 0%, 55%);
+	--color-very-dark-gray: hsl(0, 0%, 41%);
+
+	/* sizing */
+	--font-size: 0.938rem;
+
+	/* fonts */
+	--font-alata: 'Alata', sans-serif;
+	--font-josefin: 'Josefin Sans', sans-serif;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
