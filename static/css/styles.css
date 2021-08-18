@@ -4,9 +4,9 @@
 /* Variables */
 
 :root {
-	/* size */
+	/* width */
 	--mobile-width: 375px;
-	--desktop-width: 1440px;
+	--desktop-width: 1146px;
 
 	/* colors */
 	--color-white: hsl(0, 0%, 100%);
@@ -15,18 +15,83 @@
 	--color-very-dark-gray: hsl(0, 0%, 41%);
 
 	/* sizing */
-	--font-size: 0.938rem;
+	--font-size: 0.938rem; /*font 15px*/
 
 	/* fonts */
-	--font-alata: 'Alata', sans-serif;
-	--font-josefin: 'Josefin Sans', sans-serif;
+	--font-alata: 'Alata', sans-serif; /* weight 400 */
+	--font-josefin: 'Josefin Sans', sans-serif; /* weight 300 */
+
+	/* transition */
+	--transition: 0.4s ease-in-out;
 }
 
-.attribution {
-	font-size: 11px;
-	text-align: center;
+/* Global */
+html {
+	font-size: 100%;
+	box-sizing: border-box;
 }
 
-.attribution a {
-	color: hsl(228, 45%, 44%);
+*,
+*::before,
+*::after {
+	box-sizing: inherit; /* inherits from the HTML element*/
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-josefin);
+	font-weight: 300;
+	font-size: var(--font-size);
+	color: var(--color-black);
+	background-color: var(--color-white);
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* Main elements */
+
+.wrapper {
+	max-width: var(--desktop-width);
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.header,
+.footer {
+	color: var(--color-white);
+	background-color: var(--color-black);
 }
