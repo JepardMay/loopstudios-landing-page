@@ -85,6 +85,31 @@ a {
 	overflow: hidden;
 }
 
+/* Flex box styles */
+.flex {
+	display: flex;
+}
+
+.flex-fd-c {
+	flex-direction: column;
+}
+
+.flex-jc-c {
+	justify-content: center;
+}
+
+.flex-jc-sb {
+	justify-content: space-between;
+}
+
+.flex-ai-c {
+	align-items: center;
+}
+
+.flex-ai-fe {
+	align-items: flex-end;
+}
+
 /* Main elements */
 
 .wrapper {
@@ -100,6 +125,74 @@ a {
 	background-color: var(--color-black);
 }
 
+/* Header styles */
+header {
+	height: 650px;
+	background-image: url(../images/desktop/image-hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+nav {
+	height: 100px;
+}
+
+.logo img {
+	height: 2rem;
+	transition: opacity 200ms ease-in-out;
+}
+
+.logo:hover img {
+	opacity: 0.8;
+}
+
+.nav-links {
+	gap: 37px;
+	margin-bottom: 9px;
+}
+
+.attribution a,
+.footer-social-links a,
+.nav-links a {
+	position: relative;
+}
+
+.attribution a::before,
+.footer-social-links a::before,
+.nav-links a::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -11.5px;
+	background-color: var(--color-white);
+	width: 0;
+	height: 2px;
+	transition: all 200ms ease-in-out;
+}
+
+.attribution a:hover::before,
+.footer-social-links a:hover::before,
+.nav-links a:hover::before {
+	width: 25px;
+}
+
+.main-text {
+	position: absolute;
+	top: 224px;
+	width: 650px;
+	padding: 36px 0 44px 40px;
+	color: var(--color-white);
+	text-transform: uppercase;
+	font-family: var(--font-josefin);
+	border: 2.5px solid var(--color-white);
+}
+
+.main-text h1 {
+	font-size: 72px;
+	font-weight: 300;
+}
+
 .title {
 	font-family: var(--font-josefin);
 	font-weight: 300;
@@ -112,6 +205,44 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+/* Footer styles */
+.footer.logo img {
+	height: 24px;
+}
+
+.footer.logo img,
+.footer-social-links {
+	margin-bottom: 31.5px;
+}
+
+.footer .wrapper {
+	margin-top: 43px;
+	margin-bottom: 34px;
+}
+
+.footer-social-copy {
+	align-items: flex-end;
+}
+
+.footer-social-links {
+	width: fit-content;
+	gap: 16px;
+}
+
+.footer-copyright {
+	color: var(--color-dark-gray);
+}
+
+.attribution {
+	text-align: center;
+	margin-bottom: 15px;
+	color: var(--color-dark-gray);
+}
+
+.attribution a {
+	color: var(--color-white);
 }
 
 /* Hero */
