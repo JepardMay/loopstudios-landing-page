@@ -16,6 +16,9 @@
 
 	/* sizing */
 	--font-size: 0.938rem; /*font 15px*/
+	--font-size-md: 3rem; /*font 48px*/
+	--line-height: 1.6rem; /*25.6px*/
+	--line-height-md: 3rem; /*48px*/
 
 	/* fonts */
 	--font-alata: 'Alata', sans-serif; /* weight 400 */
@@ -44,9 +47,10 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	padding: 0;
-	font-family: var(--font-josefin);
-	font-weight: 300;
+	font-family: var(--font-alata);
+	font-weight: 400;
 	font-size: var(--font-size);
+	line-height: var(--line-height);
 	color: var(--color-black);
 	background-color: var(--color-white);
 	overflow-x: hidden;
@@ -94,4 +98,101 @@ a {
 .footer {
 	color: var(--color-white);
 	background-color: var(--color-black);
+}
+
+.title {
+	font-family: var(--font-josefin);
+	font-weight: 300;
+	font-size: var(--font-size-md);
+	line-height: var(--line-height-md);
+	text-transform: uppercase;
+}
+
+.space-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Hero */
+.hero {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 11.5rem;
+}
+
+.hero-img {
+	width: 66%;
+}
+
+.hero-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.hero-block {
+	width: 50%;
+	margin: 0 -15%;
+	margin-bottom: -0.2rem;
+	padding-top: 6rem;
+	padding-right: 0.5rem;
+	padding-bottom: 0.2rem;
+	padding-left: 6.2rem;
+	background-color: var(--color-white);
+}
+
+.hero-block .title {
+	margin-bottom: 1.5rem;
+}
+
+/* Gallery */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(1, 1ft);
+	grid-gap: 1.8rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.gallery-item {
+	position: relative;
+}
+
+.gallery-item img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.gallery-text {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	right: 15px;
+	z-index: 1;
+	text-transform: uppercase;
+	color: var(--color-white);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+	/* Hero */
+	.hero {
+		flex-wrap: wrap;
+	}
+
+	.hero-img,
+	.hero-block {
+		width: 100%;
+	}
+
+	/* Gallery */
+	.gallery {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 15px;
+	}
 }
