@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.175"
-     inkscape:cx="-2880.1986"
-     inkscape:cy="1457.6037"
+     inkscape:zoom="0.24748738"
+     inkscape:cx="-68.921065"
+     inkscape:cy="-668.22899"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -672,5 +672,12 @@
        height="6.3499999"
        x="-286.64767"
        y="492.03049" />
+    <rect
+       style="opacity:1;fill:#000000;stroke-width:3;fill-opacity:1"
+       id="rect201"
+       width="15.234363"
+       height="9.4880686"
+       x="-466.78622"
+       y="525.58551" />
   </g>
 </svg>
