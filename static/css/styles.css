@@ -131,6 +131,11 @@ nav {
 
 .logo img {
    height: 2rem;
+   transition: opacity 200ms ease-in-out;
+}
+
+.logo:hover img {
+   opacity: 0.8;
 }
 
 .nav-links {
@@ -151,7 +156,7 @@ nav {
    background-color: var(--color-white);
    width: 0;
    height: 2px;
-   transition: all 300ms ease-in-out;
+   transition: all 200ms ease-in-out;
 }
 
 .nav-links a:hover::before {
