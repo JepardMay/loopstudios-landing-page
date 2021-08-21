@@ -176,8 +176,8 @@ nav {
 .main-text {
    position: absolute;
    top: 14rem;
-   width: 40.625rem;
-   padding: 2.25rem 0 2.75rem 2.5rem;
+   width: 40.75rem;
+   padding: 2.25rem 0 24px 2.5rem;
    color: var(--color-white);
    text-transform: uppercase;
    font-family: var(--font-josefin);
