@@ -75,6 +75,7 @@ a {
   color: inherit;
 }
 
+/* Utility styles */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -90,6 +91,14 @@ a {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.title {
+  font-family: var(--font-josefin);
+  font-weight: 300;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+  text-transform: uppercase;
 }
 
 /* Flex box styles */
@@ -267,19 +276,66 @@ nav {
   transform: scale(1);
   border-radius: 0;
 }
+/* End of Header styles  */
 
-.title {
-  font-family: var(--font-josefin);
-  font-weight: 300;
-  font-size: var(--font-size-lg);
-  line-height: var(--line-height-lg);
-  text-transform: uppercase;
+/* Hero */
+.hero {
+  /* Change: Moved the commented styles to media query: 769px */
+
+  /*display: flex;
+  align-items: flex-end;
+  margin-top: 10rem;
+  margin-bottom: 11.5rem;
+ */
+
+  margin-top: 96px;
+  margin-bottom: 98px;
 }
 
+.hero-img {
+  flex-shrink: 0;
+  width: 66%;
+  height: 100%;
+}
+
+.hero-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-block {
+  /* Change: Moved the commented styles to media query: 769px */
+
+  /* flex-shrink: 0;
+  width: 50%;
+  margin: 0 -15%;
+  margin-bottom: -0.2rem;
+  padding-top: 6rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.2rem;
+  padding-left: 6.2rem;
+  background-color: var(--color-white); */
+
+  text-align: center;
+  padding: 72px 13px 0;
+}
+
+.hero-block .title {
+  margin-bottom: 1.5rem;
+}
+/* End of Hero styles */
+
+/* Gallery styles */
 .space-between {
-  display: flex;
+  /* Change: Moved the commented styles to media query: 769px */
+
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
+
+  text-align: center;
 }
 
 .button {
@@ -303,51 +359,15 @@ nav {
   background-color: var(--color-black);
 }
 
-/* Hero */
-.hero {
-  display: flex;
-  align-items: flex-end;
-  margin-top: 10rem;
-  margin-bottom: 11.5rem;
-}
-
-.hero-img {
-  flex-shrink: 0;
-  width: 66%;
-  height: 100%;
-}
-
-.hero-img img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.hero-block {
-  flex-shrink: 0;
-  width: 50%;
-  margin: 0 -15%;
-  margin-bottom: -0.2rem;
-  padding-top: 6rem;
-  padding-right: 0.5rem;
-  padding-bottom: 0.2rem;
-  padding-left: 6.2rem;
-  background-color: var(--color-white);
-}
-
-.hero-block .title {
-  margin-bottom: 1.5rem;
-}
-
-/* Gallery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.4rem 1.8rem;
   margin: 0;
-  margin-top: 5rem;
-  margin-bottom: 11rem;
+  margin-top: 55px;
+  margin-bottom: 34px;
+  /* margin-top: 5rem;
+  margin-bottom: 11rem; */
   padding: 0;
   list-style: none;
 }
@@ -412,6 +432,14 @@ nav {
   transition: color var(--transition);
 }
 
+section .mobile-button {
+  /* Change: This is for the second button to display on mobile */
+  display: grid;
+  place-items: center;
+  margin-bottom: 95px;
+}
+/* End of Gallery styles */
+
 /* Footer styles */
 .footer.logo img {
   height: 1.5rem;
@@ -439,6 +467,7 @@ nav {
 .footer-copyright {
   color: var(--color-dark-gray);
 }
+/* End of Footer styles */
 
 /* Attribution */
 .attribution {
@@ -454,6 +483,20 @@ nav {
 /* Media queries */
 
 /* Tablet */
+@media (min-width: 1023px) {
+  /* Hero */
+  .hero-block {
+    /* Change: Added this media query to handle the padding for
+		the left side of the hero block. It didn't look good between
+		1023px and 769px. Plus it had overflow.
+		
+		I also had to use !important to overwrite the padding-left
+		coming from the media query at 769px*/
+
+    padding-left: 6.2rem !important;
+  }
+}
+
 @media (max-width: 1024px) {
   /* Gallery */
   .gallery {
@@ -465,9 +508,58 @@ nav {
   .hide-for-large {
     display: none;
   }
+
+  /* Hero */
+  .hero {
+    /* Change: Added styles here to apply for large screen sizes */
+
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10rem;
+    margin-bottom: 11.5rem;
+  }
+
+  .hero-block {
+    /* Change: Added styles here to apply for large screen sizes */
+
+    flex-shrink: 0;
+    width: 50%;
+    margin: 0 -15%;
+    margin-bottom: -0.2rem;
+    padding-top: 6rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.2rem;
+
+    /* Change: Reduced padding on this for breakpoints
+		that are between 769px and 1023px :) */
+
+    /* padding-left: 6.2rem; */
+    padding-left: 24px;
+    background-color: var(--color-white);
+  }
+
+  /* Gallery */
+  .space-between {
+    /* Change: Added styles here to apply for large screen sizes */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gallery {
+    /* Change: Added styles here to apply for large screen sizes */
+
+    margin-top: 5rem;
+    margin-bottom: 11rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .hide-for-small {
+    display: none;
+  }
+
   /* Header */
   header {
     height: 100vh;
@@ -480,10 +572,6 @@ nav {
   .main-text {
     margin-top: 10.5625rem;
     padding-right: 1.25rem;
-  }
-
-  .hide-for-small {
-    display: none;
   }
 
   nav {
@@ -502,6 +590,13 @@ nav {
   .hero-img,
   .hero-block {
     width: 100%;
+  }
+
+  .title {
+    /* Change: Reduced the font size at this screen size
+		for the Hero and Gallery titles */
+
+    font-size: 40px;
   }
 
   /* Gallery */
@@ -552,5 +647,19 @@ nav {
   /* Header */
   .main-text {
     padding: 1.5625rem 1.5625rem 0.875rem 1.25rem;
+  }
+
+  /* Hero */
+  .hero-block {
+    /* Change: Reduced padding for the hero block */
+
+    padding-top: 50px;
+  }
+
+  .title {
+    /* Change: Reduced the font size at this screen size
+		for the Hero and Gallery titles */
+
+    font-size: 32px;
   }
 }
