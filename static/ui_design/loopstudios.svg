@@ -24,14 +24,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.10717735"
-     inkscape:cx="318.05344"
-     inkscape:cy="-696.14511"
+     inkscape:zoom="0.8574188"
+     inkscape:cx="-365.48236"
+     inkscape:cy="362.65994"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1366"
+     inkscape:window-width="1024"
      inkscape:window-height="705"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
@@ -527,7 +527,7 @@
          id="tspan935"
          x="-98.973289"
          y="-168.77296"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10.5833px;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans Light';fill:#ff6600;stroke-width:0.408692">IMMERSIVE</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10.5833px;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans Light';fill:#ff6600;stroke-width:0.408692;">IMMERSIVE</tspan></text>
     <rect
        style="opacity:0.551613;fill:#ff0000;stroke-width:3.14232"
        id="rect939"
@@ -699,5 +699,62 @@
          x="-68.330276"
          y="586.04785"
          style="fill:#ffffff;stroke-width:0.0636281">bottom: 23.5px</tspan></text>
+    <rect
+       style="opacity:0.532258;fill:#ff6600;stroke:none;stroke-width:3.34857"
+       id="rect113"
+       width="26.459681"
+       height="12.986378"
+       x="-105.01995"
+       y="13.154446" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.42717px;line-height:1.25;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans Light';word-spacing:0px;opacity:0.741936;fill:#ff0000;stroke-width:0.32543"
+       x="-94.038345"
+       y="32.151169"
+       id="text119"><tspan
+         sodipodi:role="line"
+         id="tspan117"
+         x="-94.038345"
+         y="32.151169"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.42717px;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans Light';fill:#ff0000;stroke-width:0.32543">THE LEADER</tspan></text>
+    <rect
+       style="opacity:0.532258;fill:#ff6600;stroke:none;stroke-width:4.19829"
+       id="rect121"
+       width="7.0145226"
+       height="77.001793"
+       x="-105.01995"
+       y="13.154446" />
+    <rect
+       style="opacity:0.532258;fill:#ff6600;stroke:none;stroke-width:4.68528"
+       id="rect123"
+       width="26.459681"
+       height="25.423771"
+       x="-79.272369"
+       y="-71.507103" />
+    <rect
+       style="opacity:0.532258;fill:#ff6600;stroke:none;stroke-width:4.74521"
+       id="rect125"
+       width="26.459681"
+       height="26.078369"
+       x="-85.381966"
+       y="92.797401" />
+    <rect
+       style="opacity:0.532258;fill:#ff6600;stroke:none;stroke-width:4.44189"
+       id="rect127"
+       width="41.425869"
+       height="14.5956"
+       x="-82.459297"
+       y="447.20938" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.42717px;line-height:1.25;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans Light';word-spacing:0px;opacity:0.741936;fill:#ff0000;stroke-width:0.32543"
+       x="-85.853889"
+       y="125.1203"
+       id="text144"><tspan
+         sodipodi:role="line"
+         id="tspan142"
+         x="-85.853889"
+         y="125.1203"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.42717px;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans Light';fill:#ff0000;stroke-width:0.32543">THE LEADER</tspan></text>
   </g>
 </svg>
