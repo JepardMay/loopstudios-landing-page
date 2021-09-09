@@ -13,7 +13,9 @@
 	<body>
 		<header class="header">
 			<nav class="wrapper flex flex-jc-sb flex-ai-fe">
-				<a href="#" class="logo"><img src="static/images/logo.svg" alt="Loopstudios" /></a>
+				<a href="#" class="logo"
+					><img width="192" height="32" src="static/images/logo.svg" alt="Loopstudios"
+				/></a>
 				<div class="nav-links flex hide-for-small">
 					<a href="#">About</a>
 					<a href="#">Careers</a>
@@ -21,11 +23,11 @@
 					<a href="#">Products</a>
 					<a href="#">Support</a>
 				</div>
-				<div id="burger" class="burger hide-for-large">
+				<button id="burger" class="burger hide-for-large">
 					<span></span>
 					<span></span>
 					<span></span>
-				</div>
+				</button>
 			</nav>
 			<div id="menu" class="menu flex flex-fd-c">
 				<a href="#">About</a>
@@ -48,7 +50,12 @@
 								media="(min-width: 767px)"
 								srcset="./static/images/desktop/image-interactive.jpg"
 							/>
-							<img src="./static/images/mobile/image-interactive.jpg" alt="Interactive VR in use" />
+							<img
+								width="731"
+								height="500"
+								src="./static/images/mobile/image-interactive.jpg"
+								alt="Interactive VR in use"
+							/>
 						</picture>
 					</div>
 					<div class="hero-block">
@@ -60,9 +67,10 @@
 						</p>
 					</div>
 				</section>
+
 				<section class="gallery-section">
 					<h2 class="title">Our creations</h2>
-					<button class="button" type="button">See all</button>
+					<a class="button" href="#">See all</a>
 					<ul class="gallery">
 						<li class="gallery-item">
 							<a href="#">
@@ -71,6 +79,8 @@
 										media="(min-width: 767px)"
 										srcset="./static/images/desktop/image-deep-earth.jpg" />
 									<img
+										width="256"
+										height="450"
 										src="./static/images/mobile/image-deep-earth.jpg"
 										alt="Gallery image of Deep earth"
 								/></picture>
@@ -84,6 +94,8 @@
 										media="(min-width: 767px)"
 										srcset="./static/images/desktop/image-night-arcade.jpg" />
 									<img
+										width="256"
+										height="450"
 										src="./static/images/mobile/image-night-arcade.jpg"
 										alt="Gallery image of Night arcade"
 								/></picture>
@@ -97,6 +109,8 @@
 										media="(min-width: 767px)"
 										srcset="./static/images/desktop/image-soccer-team.jpg" />
 									<img
+										width="256"
+										height="450"
 										src="./static/images/mobile/image-soccer-team.jpg"
 										alt="Gallery image of Soccer team VR"
 								/></picture>
@@ -109,7 +123,11 @@
 									><source
 										media="(min-width: 767px)"
 										srcset="./static/images/desktop/image-grid.jpg" />
-									<img src="./static/images/mobile/image-grid.jpg" alt="Gallery image of The grid"
+									<img
+										width="256"
+										height="450"
+										src="./static/images/mobile/image-grid.jpg"
+										alt="Gallery image of The grid"
 								/></picture>
 								<span class="gallery-text">The grid</span>
 							</a>
@@ -121,6 +139,8 @@
 										media="(min-width: 767px)"
 										srcset="./static/images/desktop/image-from-above.jpg" />
 									<img
+										width="256"
+										height="450"
 										src="./static/images/mobile/image-from-above.jpg"
 										alt="Gallery image of From up above VR"
 								/></picture>
@@ -134,6 +154,8 @@
 										media="(min-width: 767px)"
 										srcset="./static/images/desktop/image-pocket-borealis.jpg" />
 									<img
+										width="256"
+										height="450"
 										src="./static/images/mobile/image-pocket-borealis.jpg"
 										alt="Gallery image of Pocket borealis"
 								/></picture>
@@ -147,6 +169,8 @@
 										media="(min-width: 767px)"
 										srcset="./static/images/desktop/image-curiosity.jpg" />
 									<img
+										width="256"
+										height="450"
 										src="./static/images/mobile/image-curiosity.jpg"
 										alt="Gallery image of The
             curiosity"
@@ -161,6 +185,8 @@
 										media="(min-width: 767px)"
 										srcset="./static/images/desktop/image-fisheye.jpg" />
 									<img
+										width="256"
+										height="450"
 										src="./static/images/mobile/image-fisheye.jpg"
 										alt="Gallery image of Make it fisheye"
 								/></picture>
@@ -173,9 +199,11 @@
 		</main>
 
 		<footer class="footer">
-			<div class="wrapper flex flex-jc-sb">
+			<div class="wrapper flex flex-jc-sb flex-column-mobile">
 				<div class="footer-nav">
-					<a href="#" class="logo"><img src="static/images/logo.svg" alt="Loopstudios" /></a>
+					<a href="#" class="logo"
+						><img width="144" height="24" src="static/images/logo.svg" alt="Loopstudios"
+					/></a>
 					<div class="nav-links flex">
 						<a href="#">About</a>
 						<a href="#">Careers</a>
@@ -227,17 +255,21 @@
 							</svg>
 						</a>
 					</div>
-					<div class="footer-copyright">&copy 2021 Loopstudios. All rights reserved.</div>
+					<div class="footer-copyright">&copy; 2021 Loopstudios. All rights reserved.</div>
 				</div>
 			</div>
 			<div class="wrapper">
 				<div class="attribution">
 					Challenge by
-					<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-					Coded by
-					<a href="https://www.github.com/JepardMay" target="_blank">Veronika Palto</a>
+					<a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener"
+						>Frontend Mentor</a
+					>. Coded by
+					<a href="https://www.github.com/JepardMay" target="_blank" rel="noopener"
+						>Veronika Palto</a
+					>
 					in collaboration with
-					<a href="https://www.github.com/AllanKirui" target="_blank">Allan Kirui</a>.
+					<a href="https://www.github.com/AllanKirui" target="_blank" rel="noopener">Allan Kirui</a
+					>.
 				</div>
 			</div>
 		</footer>
