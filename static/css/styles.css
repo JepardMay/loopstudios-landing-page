@@ -542,6 +542,10 @@ nav {
 		display: unset;
 	}
 
+	.flex-column-mobile {
+		flex-direction: column;
+	}
+
 	/* Header */
 	header {
 		height: 100vh;
@@ -618,6 +622,10 @@ nav {
 		align-items: center;
 	}
 
+	.footer-nav {
+		text-align: center;
+	}
+
 	.footer-social-copy {
 		align-items: center;
 	}
@@ -686,10 +694,6 @@ nav {
 	}
 
 	/* Footer */
-	.flex-column-mobile {
-		flex-direction: column;
-	}
-
 	.footer .logo img {
 		margin-bottom: 1.7rem;
 	}
@@ -697,10 +701,6 @@ nav {
 	.footer .nav-links {
 		gap: 0.98rem;
 		margin-bottom: 2.9rem;
-	}
-
-	.footer-nav {
-		text-align: center;
 	}
 
 	.footer-social-links {
