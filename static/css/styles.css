@@ -145,11 +145,12 @@ a {
 }
 
 /* Header styles */
-header {
+.header {
 	height: 40.625rem;
 	background-image: url(../images/desktop/image-hero.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top center;
+	background-size: cover;
 }
 
 nav {
