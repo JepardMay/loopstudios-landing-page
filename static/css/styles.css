@@ -548,7 +548,7 @@ nav {
 	}
 
 	/* Header */
-	header {
+	.header {
 		height: 100vh;
 		background-image: url(../images/mobile/image-hero.jpg);
 		background-repeat: no-repeat;
