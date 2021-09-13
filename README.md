@@ -44,7 +44,7 @@ Screenshot of the general overview of the site in mobile view.
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://hungry-kilby-fc41c0.netlify.app/)
 
 ## Our process
 
@@ -58,6 +58,7 @@ Screenshot of the general overview of the site in mobile view.
 - CSS Grid
 - CSS Flexbox
 - Desktop-first workflow
+- JavaScript ES6
 - [Inkscape](https://inkscape.org) - Inkscape: Open Source Scalable Vector Graphics Editor
 
 ### What We learned
@@ -66,16 +67,13 @@ Screenshot of the general overview of the site in mobile view.
 
 ```html
 <picture>
-  <source
-    media="(min-width: 767px)"
-    srcset="./static/images/desktop/image-interactive.jpg"
-  />
-  <img
-    width="731"
-    height="500"
-    src="./static/images/mobile/image-interactive.jpg"
-    alt="Interactive VR in use"
-  />
+	<source media="(min-width: 767px)" srcset="./static/images/desktop/image-interactive.jpg" />
+	<img
+		width="731"
+		height="500"
+		src="./static/images/mobile/image-interactive.jpg"
+		alt="Interactive VR in use"
+	/>
 </picture>
 ```
 
